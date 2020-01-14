@@ -120,7 +120,7 @@ export default function PoseNet({
     <>
     {/*  <Loading name="model" target={net} />
       <Loading name="input" target={image} /> */}
-      <font color="red">{errorMessage}</font>
+      <p color="red">{errorMessage}</p>
       <div>
         <video
           playsInline

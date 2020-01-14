@@ -57,6 +57,14 @@ module.exports = {
         icon: 'src/images/Saturn.svg', // This path is relative to the root of the site.
       },
     },
-    //'gatsby-plugin-offline'
+    {
+      resolve: `gatsby-plugin-hotjar-tracking`,
+      options: {
+        includeInDevelopment: false,
+        id: 1628263,
+        sv: 6
+      }
+    },
+    'gatsby-plugin-offline'
   ],
 }
