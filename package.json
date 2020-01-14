@@ -1,0 +1,66 @@
+{
+  "name": "gatsby-starter-dimension-v2",
+  "description": "Gatsby Starter - Dimension V2",
+  "version": "1.0.0",
+  "author": "Hunter Chang",
+  "dependencies": {
+    "@loadable/component": "^5.11.0",
+    "@material-ui/core": "^4.8.3",
+    "@tensorflow-models/posenet": "^2.2.1",
+    "@tensorflow/tfjs": "^1.5.1",
+    "@tensorflow/tfjs-node": "^1.5.1",
+    "await-to-js": "^2.1.1",
+    "framer-motion": "^1.7.0",
+    "gatsby": "^2.18.17",
+    "gatsby-plugin-hotjar-tracking": "^1.0.0",
+    "gatsby-plugin-manifest": "^2.2.20",
+    "gatsby-plugin-offline": "^3.0.11",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-plugin-sass-resources": "^2.0.0",
+    "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-typescript": "^2.1.23",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-sharp": "^2.3.9",
+    "html-react-parser": "^0.10.0",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.10.0",
+    "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.25.2",
+    "react-typist": "^2.0.5",
+    "react-unity-webgl": "^7.1.9",
+    "semantic-ui-css": "^2.4.1",
+    "smooth-scroll": "^16.1.1",
+    "styled-components": "^4.4.1",
+    "tslint-react": "^4.1.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-tslint": "0.0.2",
+    "resolve-url-loader": "^3.1.1",
+    "tslint": "^5.20.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
