@@ -4,9 +4,10 @@ const pkg = require(`./package.json`);
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Dimension V2',
+    title: 'Jdahbur',
     author: 'Jamal Dahbur',
-    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
+    description: `Jamal Dahburs' Portfolio`,
+    siteUrl: 'https://jdahbur.com',
   },
   plugins: [
 
