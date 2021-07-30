@@ -44,5 +44,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-resolve-src',
   ],
 }

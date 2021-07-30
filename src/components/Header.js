@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import "../assets/scss/index-new.scss"
+import "assets/scss/index-new.scss"
 
 
 const Header = props => (
