@@ -262,9 +262,26 @@ p {
   transition: all .25s ease;
   filter: brightness(100%);
 
+  
 
-  &--facemark {
-    background-image: url("https://portfolio-videos-2019.s3-us-west-2.amazonaws.com/Group.jpg");
+&--facemark {
+  background-image: url("https://portfolio-videos-2019.s3-us-west-2.amazonaws.com/Group.jpg");
+  background-size: cover;
+  width: auto;
+  background-repeat: no-repeat;
+  max-height: 256px;
+  min-height: 100px;
+  @media screen and(max-width: 699px) {
+    max-height: 199px;
+    min-height: 100px;
+
+  }
+
+}
+
+  &--facemesh {
+    background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.png");
+    background-color: #f3e9de;
     background-size: cover;
     width: auto;
     background-repeat: no-repeat;

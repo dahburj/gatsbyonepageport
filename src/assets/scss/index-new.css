@@ -275,6 +275,22 @@ p {
   }
 }
 
+.box--facemesh {
+  background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.png");
+  background-size: cover;
+  width: auto;
+  background-repeat: no-repeat;
+  max-height: 256px;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 699px) {
+  .box--facemesh {
+    max-height: 199px;
+    min-height: 100px;
+  }
+}
+
 .box--posenet {
   background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-size: cover;
