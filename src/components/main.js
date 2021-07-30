@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import "../assets/scss/index-new.scss"
+import "assets/scss/index-new.scss"
 
 import Grid from '@material-ui/core/Grid';
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from 'images/pic01.jpg'
+import pic02 from 'images/pic02.jpg'
+import pic03 from 'images/pic03.jpg'
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -24,20 +24,26 @@ const ButtonGrid = () => {
                 justifyContent="center"
                 alignItems="center"
               >
-                    <Grid item xs className="boxgrid__item boxgrid__item">
+                    <Grid item xs className="boxgrid__item">
                       <a onClick={() => openInNewTab('https://fce-mesh.jdahbur.com')} className="box box--facemesh">
                         <div /><div /><div />
                       </a>
+                      <br />
+                      <p className="box__title">Face Mesh</p>
                     </Grid>
-                    <Grid item xs className="boxgrid__item boxgrid__item">
+                    <Grid item xs className="boxgrid__item">
                       <a onClick={() => openInNewTab('https://face-rec.jdahbur.com')} className="box box--facemark">
                         <div /><div /><div />
                       </a>
+                      <br />
+                      <p className="box__title">Face Recognition</p>
                     </Grid>
                     <Grid item xs className="boxgrid__item">
                         <a onClick={() => openInNewTab('https://3dpose.jdahbur.com')} className="box box--posenet">
                           <img src="https://img.icons8.com/ios/96/000000/yoga.png" style={{maxHeight: '75px', maxWidth:'75px', bottom: 0, position: "inherit"}} />
                         </a>
+                        <br />
+                      <p className="box__title">Real-Time 3D Pose Detection</p>
                       </Grid>
                   {/*
 https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.svg
