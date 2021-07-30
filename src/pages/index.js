@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Header from '../components/header'
-import Main from '../components/main'
-import Footer from '../components/footer'
+
+import Header from '../components/Header'
+import Main from '../components/Main'
+import Footer from '../components/Footer'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -81,7 +82,7 @@ class IndexPage extends React.Component {
   }
 
   handleClickOutside(event) {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+    if (this.wrapperRef && event.target.id == "wrapper") {
       if (this.state.isArticleVisible) {
         this.handleCloseArticle();
       }
@@ -102,7 +103,7 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
-            <Footer />
+            <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
         </div>

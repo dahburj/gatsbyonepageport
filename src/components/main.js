@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from "gatsby";
 import "../assets/scss/index-new.scss"
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+
 import Grid from '@material-ui/core/Grid';
 
+import pic01 from '../images/pic01.jpg'
+import pic02 from '../images/pic02.jpg'
+import pic03 from '../images/pic03.jpg'
+
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+  if (newWindow) newWindow.opener = null
+}
 
 
 const ButtonGrid = () => {
@@ -15,17 +21,20 @@ const ButtonGrid = () => {
               <Grid
                 container
                 direction="row"
-                justify="center"
+                justifyContent="center"
                 alignItems="center"
               >
-                
-                  <Link to="/FaceMark/">
                     <Grid item xs className="boxgrid__item boxgrid__item">
-                      <div className="box box--facemark">
+                      <a onClick={() => openInNewTab('https://fce-mesh.jdahbur.com')} className="box box--facemark">
                         <div /><div /><div />
-                      </div>
+                      </a>
                     </Grid>
-                  </Link>
+                    <Grid item xs className="boxgrid__item">
+                        <a onClick={() => openInNewTab('https://3dpose.jdahbur.com')} className="box box--posenet">
+                          <img src="https://img.icons8.com/ios/96/000000/yoga.png" style={{maxHeight: '75px', maxWidth:'75px', bottom: 0, position: "inherit"}} />
+                        </a>
+                      </Grid>
+                  {/*
                   <Link to="/PosePage">
                     <Grid item xs className="boxgrid__item">
                         <div className="box box--posenet">
@@ -33,19 +42,7 @@ const ButtonGrid = () => {
                         </div>
                       </Grid>
                   </Link>
-                  <Link to="/faceDetector/">
-                    <Grid item xs className="boxgrid__item boxgrid__item--wide">
-                      <div className="box box--image">
-                      </div>
-                    </Grid>
-                  </Link>
-                  <Link to="/OpticalFlowPage/">
-                    <Grid item xs className="boxgrid__item boxgrid__item">
-                      <div className="box box--opticalflow">
-                        <div /><div />
-                      </div>
-                    </Grid>
-                  </Link>
+                  */}
               </Grid>
           </div>
   )
@@ -68,7 +65,6 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        
         <article
           id="playground"
           className={`${this.props.article === 'playground' ? 'active' : ''} ${
@@ -92,8 +88,10 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
+           <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+   <input type="hidden" name="bot-field" />
+   <input type="hidden" name="form-name" value="contact" />
+   <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
             </div>
@@ -115,35 +113,88 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li>
+          <li>
               <a
-                href="https://twitter.com/jamaldahbur"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/dahburj"
+                target="_blank"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
               </a>
             </li>
+            <li>
+              <a href="https://www.linkedin.com/in/j-dahbur-0000" target="_blank" className="icon fa-linkedin">
+                <span className="label">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dahburj/" target="_blank" className="icon fa-instagram">
+                <span className="label">Instagram</span>
+              </a>
+            </li>
+
           </ul>
           {close}
         </article>
+        {/*
+        <article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Intro</h2>
+          <span className="image main">
+            <img src={pic01} alt="" />
+          </span>
+          <p>
+            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
+            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
+            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
+            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
+            By the way, check out my <a href="#work">awesome work</a>.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+            libero eu nibh porttitor fermentum. Nullam venenatis erat id
+            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
+            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
+            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
+            lectus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. In non lorem sit amet elit
+            placerat maximus. Pellentesque aliquam maximus risus, vel sed
+            vehicula.
+          </p>
+          {close}
+        </article>
+        
+        <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">About</h2>
+          <span className="image main">
+            <img src={pic03} alt="" />
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
+            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
+            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
+            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
+            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
+            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
+            amet.
+          </p>
+          {close}
+        </article>
+        */}
+     
       </div>
     )
   }

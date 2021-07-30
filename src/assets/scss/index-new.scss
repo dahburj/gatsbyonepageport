@@ -505,3 +505,9 @@ button:focus {
   border-color: $lightblue;
   box-shadow:0 0 0 1px $lightblue;
 }
+
+.github-icon {
+  background-image: url("s3://portfolio-videos-2019/noun_github_3428233.svg");
+  background-size: cover;
+
+}

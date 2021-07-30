@@ -1,18 +1,16 @@
+
 const path = require('path')
 const pkg = require(`./package.json`);
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://jdahbur.com`,
-    title: "Jamal Dahbur's Portfolio Single Page",
-    author: "Jamal Dahbur",
-    description: "Jamal Dahbur's Portfolio Single Page App using Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    title: 'Gatsby Starter - Dimension V2',
+    author: 'Jamal Dahbur',
+    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
   },
   plugins: [
+
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-tslint',
-    `gatsby-plugin-typescript`,
-    'gatsby-plugin-typescript-checker',
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
@@ -45,26 +43,5 @@ module.exports = {
       }
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/Saturn.svg', // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-hotjar-tracking`,
-      options: {
-        includeInDevelopment: false,
-        id: 1628263,
-        sv: 6
-      }
-    },
-    'gatsby-plugin-offline'
   ],
 }
