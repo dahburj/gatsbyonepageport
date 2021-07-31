@@ -3,6 +3,7 @@ import Layout from 'components/layout.js'
 
 import Header from 'components/header.js'
 import Main from 'components/main.js'
+
 import Footer from 'components/footer.js'
 
 class IndexPage extends React.Component {
