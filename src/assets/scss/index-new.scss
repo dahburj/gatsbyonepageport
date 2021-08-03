@@ -272,7 +272,7 @@ p {
   background-size: cover;
   background-position-x: -5rem;
   width: 95.5px;
-  height: 280px;
+  height: 190px;
   left: -2.25%;
   bottom: 1.05%;
   margin: 2.5% 2.5%;
@@ -290,8 +290,8 @@ p {
     background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.png");
     background-color: #fffdfb93;
     background-size: cover;
-    width: 185.5px;
-    height: 290px;
+    width: 100.5px;
+    height: 190px;
     left: -2.75%;
     margin: 2.5% 2.5%;
     @media screen and(max-width: 699px) {
@@ -305,12 +305,13 @@ p {
   &--posenet {
     background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
     background-size: cover;
-    background-position-y: -.5px;
-    width: 115.5px;
-    height: 140px;
+    background-position-y: -1.25px;
+    padding: 2.95rem 25%;
+    width: 105.5px;
+    height: 180px;
     left: -2.25%;
     bottom: 1.05%;
-    margin: 2.5% 2.5%;
+    margin: 5.5% .5%;
     background-repeat: no-repeat;
     @media screen and(max-width: 699px) {
       max-height: 199px;
@@ -323,11 +324,13 @@ p {
   &--eCommerce {
     background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/pexels-andrea-piacquadio-919436.jpg");
     background-size: cover;
+    background-position-x: -5rem;
     width: 100%;
-    height: 270px;
-    left: .5%;
+    min-width: 135px;
+    height: 220px;
+    left: 2.5%;
     bottom: 1.05%;
-    margin: 5% 2.5%;
+    margin: 2.5% -.5%;
     background-repeat: no-repeat;
     @media screen and(max-width: 699px) {
       max-height: 199px;
@@ -337,6 +340,39 @@ p {
     }
   }
 
+  &--virtualevent {
+    background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/pexels-olya-kobruseva-5386754.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    left: 9.5%;
+    bottom: 1.05%;
+    margin: 5.5% 15.5%;
+    background-repeat: no-repeat;
+    @media screen and(max-width: 699px) {
+      max-height: 199px;
+      min-height: 100px;
+      min-width: 65px;
+
+    }
+  }
+  &--videoconf {
+    background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/pexels-anna-shvets-4226140.jpg");
+    background-size: cover;
+    min-width: 245px;
+    width: 100%;
+    height: 150px;
+    left: .5%;
+    bottom: 1.05%;
+    margin: 5.5% -2.5%;
+    background-repeat: no-repeat;
+    @media screen and(max-width: 699px) {
+      max-height: 199px;
+      min-height: 100px;
+      min-width: 65px;
+
+    }
+  }
   &--opticalflow {
     background-image: url("https://opencv-python-tutroals.readthedocs.io/en/latest/_images/opticalflow_lk.jpg");
     background-size: cover;
@@ -384,7 +420,10 @@ p {
     font-weight: 900;
     z-index: 25;
     color: rgba(247, 244, 244, 0.548);
-    max-width: 50px;
+    max-width: fit-content;
+    left: .15rem;
+    margin:auto;
+    padding: 5% 5%;
   }
 }
 

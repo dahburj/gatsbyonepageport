@@ -36,15 +36,29 @@ const ButtonGrid = () => {
                         <div /><div /><div />
                       </a>
                       <br />
-                      <p className="box__title">Face Recognition</p>
+                      <p className="box__title">Face Rec.</p>
                     </Grid>
                     <Grid item xs className="boxgrid__item">
                         <a onClick={() => openInNewTab('https://3dpose.jdahbur.com')} className="box box--posenet">
                           <img src="https://img.icons8.com/ios/96/000000/yoga.png" style={{maxHeight: '75px', maxWidth:'75px', bottom: 0, position: "inherit"}} />
                         </a>
                         <br />
-                      <p className="box__title">Pose Detection</p>
+                      <p className="box__title">3D Pose</p>
                       </Grid>
+                      <Grid item xs className="boxgrid__item">
+                      <a onClick={() => openInNewTab('https://virtual-event-demo.jdahbur.com')} className="box box--virtualevent">
+                        <div /><div /><div />
+                      </a>
+                      <br />
+                      <p className="box__title">Virtual Event</p>
+                    </Grid>
+                    <Grid item xs className="boxgrid__item">
+                      <a onClick={() => openInNewTab('https://video-conf-demo.jdahbur.com')} className="box box--videoconf">
+                        <div /><div /><div />
+                      </a>
+                      <br />
+                      <p className="box__title">Video Conf. Demo</p>
+                    </Grid>
                       <Grid item xs className="boxgrid__item">
                       <a onClick={() => openInNewTab('https://nextjs-ecommerce.jdahbur.com/')} className="box box--eCommerce">
                         <div /><div /><div />
