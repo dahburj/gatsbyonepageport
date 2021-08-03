@@ -46,7 +46,7 @@ const ButtonGrid = () => {
                       <p className="box__title">Pose Detection</p>
                       </Grid>
                       <Grid item xs className="boxgrid__item">
-                      <a onClick={() => openInNewTab('https://face-rec.jdahbur.com')} className="box box--eCommerce">
+                      <a onClick={() => openInNewTab('https://nextjs-ecommerce.jdahbur.com/')} className="box box--eCommerce">
                         <div /><div /><div />
                       </a>
                       <br />
