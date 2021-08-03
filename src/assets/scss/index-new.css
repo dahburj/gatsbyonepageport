@@ -238,17 +238,25 @@ p {
 .grid {
   width: 60%;
   height: calc(50% + 48px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   padding: 2rem;
   border-radius: 0.5rem;
   font-size: .875rem;
-  color: #FFF;
+  color: #130b0b;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   -webkit-transform: scale(1);
@@ -262,41 +270,49 @@ p {
 .box--facemark {
   background-image: url("https://portfolio-videos-2019.s3-us-west-2.amazonaws.com/Group.jpg");
   background-size: cover;
-  width: auto;
-  background-repeat: no-repeat;
-  max-height: 256px;
-  min-height: 100px;
+  background-position-x: -5rem;
+  width: 95.5px;
+  height: 280px;
+  left: -2.25%;
+  bottom: 1.05%;
+  margin: 2.5% 2.5%;
 }
 
 @media screen and (max-width: 699px) {
   .box--facemark {
     max-height: 199px;
     min-height: 100px;
+    min-width: 65px;
   }
 }
 
 .box--facemesh {
   background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.png");
+  background-color: #fffdfb93;
   background-size: cover;
-  width: auto;
-  background-repeat: no-repeat;
-  max-height: 256px;
-  min-height: 100px;
+  width: 185.5px;
+  height: 290px;
+  left: -2.75%;
+  margin: 2.5% 2.5%;
 }
 
 @media screen and (max-width: 699px) {
   .box--facemesh {
     max-height: 199px;
     min-height: 100px;
+    min-width: 65px;
   }
 }
 
 .box--posenet {
   background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-size: cover;
-  width: auto;
-  max-height: 256px;
-  min-height: 100px;
+  background-position-y: -.5px;
+  width: 115.5px;
+  height: 140px;
+  left: -2.25%;
+  bottom: 1.05%;
+  margin: 2.5% 2.5%;
   background-repeat: no-repeat;
 }
 
@@ -304,6 +320,26 @@ p {
   .box--posenet {
     max-height: 199px;
     min-height: 100px;
+    min-width: 65px;
+  }
+}
+
+.box--eCommerce {
+  background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/pexels-andrea-piacquadio-919436.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  left: .5%;
+  bottom: 1.05%;
+  margin: 5% 2.5%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 699px) {
+  .box--eCommerce {
+    max-height: 199px;
+    min-height: 100px;
+    min-width: 65px;
   }
 }
 
@@ -312,9 +348,10 @@ p {
   background-size: cover;
   background-origin: 0.5rem;
   width: auto;
-  max-height: 300px;
-  min-height: 130px;
-  min-width: 65px;
+  width: 85.5px;
+  height: 100px;
+  left: 40%;
+  bottom: 1.05rem;
   background-repeat: no-repeat;
 }
 
@@ -353,41 +390,17 @@ p {
   }
 }
 
-.box--opticalflow {
-  background-image: url("https://opencv-python-tutroals.readthedocs.io/en/latest/_images/opticalflow_lk.jpg");
-  background-size: cover;
-  width: auto;
-  max-height: 256px;
-  min-height: 100px;
-  background-repeat: no-repeat;
-  padding: 0;
-}
-
-@media screen and (max-width: 699px) {
-  .box--opticalflow {
-    max-height: 199px;
-    min-height: 100px;
-  }
-}
-
-.box__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 0.5rem;
+.box__title {
+  font-weight: 900;
+  z-index: 25;
+  color: rgba(247, 244, 244, 0.548);
+  max-width: 50px;
 }
 
 .poseNetText {
   font-size: 2rem;
   font-weight: 200;
-  top: 10px;
+  top: 90px;
   left: 0px;
 }
 

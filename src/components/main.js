@@ -43,8 +43,15 @@ const ButtonGrid = () => {
                           <img src="https://img.icons8.com/ios/96/000000/yoga.png" style={{maxHeight: '75px', maxWidth:'75px', bottom: 0, position: "inherit"}} />
                         </a>
                         <br />
-                      <p className="box__title">Real-Time 3D Pose Detection</p>
+                      <p className="box__title">Pose Detection</p>
                       </Grid>
+                      <Grid item xs className="boxgrid__item">
+                      <a onClick={() => openInNewTab('https://face-rec.jdahbur.com')} className="box box--eCommerce">
+                        <div /><div /><div />
+                      </a>
+                      <br />
+                      <p className="box__title">E-Commerce</p>
+                    </Grid>
                   {/*
 https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.svg
                   <Link to="/PosePage">

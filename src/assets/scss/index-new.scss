@@ -245,13 +245,16 @@ p {
 .grid {
   width: 60%;
   height: calc(50% + 48px);
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
 
 // ============= CONTENT BOX ==============
 
 .box {
-  display:flex;
+  display:inline-flex;
   position:relative;
   padding: $default-spacing;
   border-radius: $border-radius;
@@ -267,11 +270,13 @@ p {
 &--facemark {
   background-image: url("https://portfolio-videos-2019.s3-us-west-2.amazonaws.com/Group.jpg");
   background-size: cover;
-  width: 85.5px;
-  height: 100px;
-  left: 40%;
-  bottom: 1.05rem;
-  @media screen and(max-width: 699px) {
+  background-position-x: -5rem;
+  width: 95.5px;
+  height: 280px;
+  left: -2.25%;
+  bottom: 1.05%;
+  margin: 2.5% 2.5%;
+    @media screen and(max-width: 699px) {
     max-height: 199px;
     min-height: 100px;
     min-width: 65px;
@@ -285,10 +290,10 @@ p {
     background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/Low-Poly-Female-Head-Wireframe.png");
     background-color: #fffdfb93;
     background-size: cover;
-    width: 85.5px;
-    height: 100px;
-    left: 40%;
-    bottom: 1.05rem;
+    width: 185.5px;
+    height: 290px;
+    left: -2.75%;
+    margin: 2.5% 2.5%;
     @media screen and(max-width: 699px) {
       max-height: 199px;
       min-height: 100px;
@@ -300,10 +305,12 @@ p {
   &--posenet {
     background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
     background-size: cover;
-    width: 135.5px;
-    height: 130px;
-    left: 40%;
-    bottom: 1.05rem;
+    background-position-y: -.5px;
+    width: 115.5px;
+    height: 140px;
+    left: -2.25%;
+    bottom: 1.05%;
+    margin: 2.5% 2.5%;
     background-repeat: no-repeat;
     @media screen and(max-width: 699px) {
       max-height: 199px;
@@ -313,6 +320,23 @@ p {
     }
   }
   
+  &--eCommerce {
+    background-image: url("https://portfolio-videos-2019.s3.us-west-2.amazonaws.com/pexels-andrea-piacquadio-919436.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+    left: .5%;
+    bottom: 1.05%;
+    margin: 5% 2.5%;
+    background-repeat: no-repeat;
+    @media screen and(max-width: 699px) {
+      max-height: 199px;
+      min-height: 100px;
+      min-width: 65px;
+
+    }
+  }
+
   &--opticalflow {
     background-image: url("https://opencv-python-tutroals.readthedocs.io/en/latest/_images/opticalflow_lk.jpg");
     background-size: cover;
@@ -353,34 +377,14 @@ p {
     }
   }
 
-    &--opticalflow {
-    background-image: url("https://opencv-python-tutroals.readthedocs.io/en/latest/_images/opticalflow_lk.jpg");
-    background-size: cover;
-    width: auto;
 
-    max-height: 256px;
-    min-height: 100px;
-
-    background-repeat: no-repeat;
-    padding: 0;
-    @media screen and(max-width: 699px) {
-      max-height: 199px;
-      min-height: 100px;
-
-    }
-  }
 
  
   &__title {
-    position: static !important;
-    font-size: 1.1rem;
     font-weight: 900;
-    margin: auto auto;
-    height: 25px;
-    padding: auto;
-    width: max-content;
     z-index: 25;
-    color: rgba(255, 234, 225, 0.959);
+    color: rgba(247, 244, 244, 0.548);
+    max-width: 50px;
   }
 }
 
@@ -389,7 +393,7 @@ p {
 .poseNetText {
   font-size: 2rem;
   font-weight: 200;
-  top: 10px;
+  top: 90px;
   left: 0px ;
 }
 
